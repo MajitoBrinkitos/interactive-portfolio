@@ -1,0 +1,264 @@
+body{
+    font-family: "Encode Sans Semi Expanded", sans-serif;
+    background-color: #66369D;
+}
+
+/*Page Main Container*/
+.container-fluid{
+    background-color: #66369D;
+}
+
+/*Navigation Bar*/
+.navbar .container{
+    background: linear-gradient(#f39a0b, #edac42, #654c02) ; /*light effect*/
+    /*To center horizontally within the container in the navbar*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    box-shadow: 0 0 25px 0 rgba(8, 6, 0, 0.953); /*hor, ver, blur, radius, color*/
+    
+}
+
+/*Navigation Bar Links*/
+/*Home Link*/
+#nav1{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+}
+
+/*About Me, Resume, Work, Contactr*/
+#nav2{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 30px;
+    color: white;
+}
+
+.navbar-nav{
+    /*Centers navitems*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-item{
+    /*Padding between nav-items*/
+    padding: 0 35px;
+}
+
+/*Home Page Image*/
+img{
+    max-width: auto;
+    max-height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 0px;
+    padding: 10px 0;
+}
+
+/*h1*/
+h1{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 60px;
+    z-index: 1; /* ENsures heading above the image*/
+    font-family: "Bebas Neue", sans-serif;
+    color: #ffc107;
+    text-align: center;
+}
+
+h3{
+    position: absolute;
+    top: 58%;
+    left: 20%;
+    z-index: 1; /* ENsures heading above the image*/
+    font-family: "Bebas Neue", sans-serif;
+    font-style: italic;
+    color: #ffc107;
+    text-align: center;
+}
+
+/*hr division*/
+hr{
+    height: 3px; /*border-width default value is 1px for all edges*/
+    background-color: rgb(248, 248, 248);
+    border-color: rgb(255, 255, 255); /*Edges, borders of the hr*/
+}
+
+/*Section About Me*/
+#about{
+    background-color: #CDC7D9;
+    color: black;
+}
+
+#about h2{
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    color: #66369D;
+}
+
+h5{
+    text-align: justify;
+    padding: 15px;
+
+}
+
+/*About Me Images*/
+#img2{
+    position: absolute;
+    transform: rotate(350deg);
+    top: 84%;
+    right: 17%;
+    max-height: 45vh;
+}
+
+#img3{
+    position: absolute;
+    max-height: 23vh;
+    top: 95%;
+    right: 5%;
+    transform: rotate(18deg);
+}
+
+#quote{
+    font-size: 24px;
+    padding: 10px;
+    font-family: "La Belle Aurore", cursive;
+    text-align: center;
+}
+
+/*Resume*/
+#resume{
+    background-color: #CDC7D9;
+}
+
+#resume h2{
+    color: #66369D;
+    padding: 15px;
+    font-weight: bold;
+    font-family: "Encode Sans Semi Expanded", sans-serif;
+}
+
+#resume-p{
+    color: black;
+    font-size: 18px;
+    font-family: "Encode Sans Semi Expanded", sans-serif;
+}
+
+/*Resume: Skills*/
+#skills{
+    font-size: 14px;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    font-family: "Encode Sans Semi Expanded", sans-serif;
+}
+
+#skills:hover{
+    background-color: #66369D;
+    color: whitesmoke;
+}
+
+/*Skills content*/
+.menu{
+    max-width: 70%; /*sets this div to make it 80% the width of body, not the div*/
+    background-color: white;
+    /*To center horizontally within the body element*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sks{
+    text-align: left;
+    width: 20%;
+}
+
+.ds{
+    text-align: right;
+    width: 80%;
+}
+
+/*Subheaders Resume Section*/
+#sub-head-resume {
+    font-size: 22px;
+    font-weight: bolder;
+    color: #66369D;
+    font-style: italic;
+}
+
+/*Resume: Prof Hist*/
+/*history*/
+#history{
+    font-size: 14px;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    font-family: "Encode Sans Semi Expanded", sans-serif;
+}
+
+#history:hover{
+    background-color: #66369D;
+    color: whitesmoke;
+}
+
+
+    /*p behave as inline elements*/
+    .item p{
+        font-size: 18px;
+        display: inline-block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: black;
+    }
+
+/*Button for Resume Section*/
+button{
+    padding: 5px 15px;
+    cursor: pointer;
+    background-color: #967BB6;
+    border-radius: 30%;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #66369D;
+    color: whitesmoke;
+}
+
+/*Footer*/
+footer{
+    font-size: 18px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: #66369D;
+    color: #ffc107;
+    padding: 10px;
+}
+
+
+
+
+/*@media*/
+@media screen and (max-width: 480px){
+    .res-subitems{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .res-subitems {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

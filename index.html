@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Interactive Personal Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <!--CSS-->
+        <link rel="stylesheet" href="./style.css">
+
+        <!--Font Styles-->
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> <!--nav1-->
+        <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet"> <!--nav2-->
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"><!--Body-->
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
+         <!--Font Awesome-->
+         <script src="https://kit.fontawesome.com/e2d250d66b.js" crossorigin="anonymous"></script>
+
+         <!--JS-->
+         <script src="script.js"> </script>
+    </head>
+
+    <body>
+        <!--Home Container-->
+        <div class="container-fluid">
+            <!--Navigation Bar-->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <!--Home-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--Dropdown-->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!--ul-->
+                        <ul class="navbar-nav">
+                            <!--li elements-->
+                            <!--Home-->
+                            <li class="nav-item">
+                                <a id="nav1" class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <!--About Me-->
+                            <li class="nav-item">
+                                <a id="nav2" class="nav-link" href="#about">About Me</a>
+                            </li>
+                            <!--Resume-->
+                            <li class="nav-item">
+                                <a id="nav2" class="nav-link" href="#resume">Resume</a>
+                            </li>
+                            <!--Portfolio-->
+                            <li class="nav-item">
+                                <a id="nav2" class="nav-link" href="./work.html">Work</a> 
+                            </li>
+                            <!--Contact-->
+                            <li class="nav-item">
+                                <a id="nav2" class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--First Section: Home image and title-->
+            <section>
+                    <img src="./imgs/mjmc.jpg"MariaJose">
+                    <h1>María-José Mejía</h1>
+                    <h3>Let's work together!</h3>
+            </section>
+            <!--Second Section: About Me-->
+            <section>
+                <div id="about" class="container-fluid">
+                    <div class="row">
+                        <!--First Column-->
+                        <div class="col">
+                            <h2>ENGINEER | PHOTOGRAPHER | WEB DEVELOPER</h2>
+                            <h5>
+                                Passionate about technology, I am an engineer who believes that emerging technologies are reshaping our modern world 
+                                in new interesting ways. Therefore, earning experience in different technology industries has allowed me to gain unique 
+                                perspectives to develop creative content by combining engineering, photography, and software development.
+                            </h5>
+                        </div>
+                        <!--Second Column-->
+                        <div class="col">
+                            <img src="./imgs/aboutme.jpg" class="img-fluid">
+                            <img id="img2" src="./imgs/20210723_185350.jpg" class="img-fluid">
+                            <img id="img3" src="./imgs/20221001_170825.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                    <!--Second Row-->
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                            <p id="quote">
+                                "I firmly believe that technology plays an indispensable role in our world, transcending boundaries and permeating every aspect of life.
+                                Regardless of your expertise background, technology will always be the golden ticket to extraordinary possibilities."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <!--Third Section: Resume-->
+            <main>
+                <div id="resume" class="container-fluid">
+                    <!--Resume Title-->
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col align-self-center">
+                                <h2>RESUME</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col align-self-center">
+                                <p id="resume-p">
+                                    SKILLS | WORK EXPERIENCE | CERTIFICATIONS | EDUCATION
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!--Skills-->
+                    <section>
+                        <div class="row" class="res-subitems">
+                            <!--skills sub-title-->
+                            <div class="col align-self-center" style="text-align: center;">
+                                <p id="sub-head-resume">SKILLS</p>
+                                <button type="button" id="skills">About Skills</button> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="menu">
+                                <section>
+                                    <!--Article: contains multiple elements that have related information-->
+                                      <article class="item">
+                                        <p class="sks">Technical Skills</p><p class="ds">CSST, MS-Azure 900, Moodle</p>
+                                      </article>
+                                      <br>
+                                      <article class="item">
+                                        <p class="sks">Web Skills</p><p class="ds">HTML, CSS, JavaScript, Bootstrap</p>
+                                      </article>
+                                      <br>
+                                      <article class="item">
+                                        <p class="sks">Hard Skills</p><p class="ds">Technical support skills, platform administration, H5P content creation, Financial administration</p>
+                                      </article>
+                                      <br>
+                                      <article class="item">
+                                        <p class="sks">Soft Skills</p><p class="ds">Strong communication and Teamwork abilities, Creativity, Customer Service, Office Management</p>
+                                      </article>
+                                      <br>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+                    <!--Professional History-->
+                    <section>
+                        <div class="row">
+                            <!--prof history sub-title-->
+                            <div class="col align-self-center" style="text-align: center;">
+                                <p id="sub-head-resume">PROFESSIONAL HISTORY</p>
+                                <button type="button" id="history">My background</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="menu">
+                                <section>
+                                    <!--Article: contains multiple elements that have related information-->
+                                      <article class="item">
+                                        <p class="sks">Technology Assessor | Institute for the Comprehensive Training of the Deaf, Mexico | Jan 2021 - Dec 2023</p><p class="ds">•	Administered Moodle platform to provide high quality Mexican Sign Language courses. <br> •	Created eLearning content using the H5P framework to make the course more interactive and hands-on.</p>
+                                      </article>
+                                      <br>
+                                      <article class="item">
+                                        <p class="sks">Financial Assistant | Recoveraid Recovery Solutions Inc., Canada | Dec 2021 - Oct 2022</p><p class="ds">•	Developed financial reports based on collected data from invoices and financial documents. <br> •	Use Microsoft Excel to create datasheets and keep records of the collected data.</p>
+                                      </article>
+                                      <br>
+                                      <article class="item">
+                                        <p class="sks">IT Technician | Mexican government, Mexico | Jan 2020 - Feb 2021</p><p class="ds">•	HTML, CSS, JS, and Bootstrap frameworks, to develop Mexico City's 2021 Public preparedness and recovery website. <br> •	The website was designed to access basic information related to natural disasters, more easily.</p>
+                                      </article>
+                                      <br>
+                                      <article class="item">
+                                        <p class="sks">Homologation Engineer | Samsung Electronics Mexico, Mexico | Dec 2016 - Apr 2017</p><p class="ds">•	As a Homologation Engineer, I approved the correct functioning of cellular equipment and tablets. <br> •	Use of specialized software to detect bugs and errors on logs.</p>
+                                      </article>
+                                      <br>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+                    <!--Certifications-->
+                    <section>
+                        <div class="row">
+                            <!--certi sub-title-->
+                            <div class="col align-self-center" style="text-align: center;">
+                                <p id="sub-head-resume">CERTIFICATIONS</p>
+                                <button type="button" id="certi">Achievements</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="menu">
+                                <section>
+                                    <!--Article: contains multiple elements that have related information-->
+                                      <article class="item">
+                                        <p class="sks">Microsoft</p><p class="ds">Azure AZ-900 | November 2022</p>
+                                      </article>
+                                      <br>
+                                      <article class="item">
+                                        <p class="sks">SoloLearn</p><p class="ds">Fundamentals of Web Development | March 2023</p>
+                                      </article>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+                    <!--Education-->
+                    <section>
+                        <div class="row">
+                            <!--school sub-title-->
+                            <div class="col align-self-center" style="text-align: center;">
+                                <p id="sub-head-resume">ACADEMIC BACKGROUND</p>
+                                <button type="button" id="school">Learning Path</button>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="row">
+                        <div class="menu">
+                            <section>
+                                <!--Article: contains multiple elements that have related information-->
+                                  <article class="item">
+                                    <p class="sks">University of British Columbia | Extending Learning</p><p class="ds">Software Development | Vancouver, BC | Apr 2024 - Dec 2024</p>
+                                  </article>
+                                  <br>
+                                  <article class="item">
+                                    <p class="sks">Cornerstone International Community College of Canada</p><p class="ds">Network Systems Specialist Diploma | Vancouver, BC | July 2022 - June 2024</p>
+                                  </article>
+                                  <br>
+                                  <article class="item">
+                                    <p class="sks">Autonomous National Unversity of Mexico (UNAM)</p><p class="ds">BSc in Telecommunications Engineering | Mexico City, Mexico | 2010 - 2015</p>
+                                  </article>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!--Footer-->
+            <div class="footer">
+                <footer>
+                    <p class="address">
+                        <i class="fa-regular fa-copyright"></i> 123 Burnaby, BC, Canada <i class="fa-regular fa-registered"></i>
+                    </p>
+                </footer>
+            </div>
+        </div>
+        <!--Scripts-->
+
+        <!--JS-->
+        <!--Skills Button-->
+        <script>
+            document.getElementById('skills').addEventListener('click', function() {
+            alert('I am a highly motivated and self-taught person, with a great desire to learn and improve my skills in engineering, photography, and web development. Strong analytical and communication skills to deliver successful results in a fast-paced environment.');
+            });
+        </script>
+        <!--PH Button-->
+        <script>
+            document.getElementById('history').addEventListener('click', function() {
+            alert('From academic institutions to private companies to the governmental sector, I have acquired and learned from different technological sectors to become the IT professional I am today.');
+            });
+        </script>
+        <!--certi Button-->
+        <script>
+            document.getElementById('certi').addEventListener('click', function() {
+            alert('SOLOLEARN | MICROSOFT | APRENDE+');
+            });
+        </script>
+        <!--School Button-->
+        <script>
+            document.getElementById('school').addEventListener('click', function() {
+            alert('UNAM | CICCC | UBC');
+            });
+        </script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    </body>
+</html>
+
+
+
